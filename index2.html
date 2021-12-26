@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic CSS</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        background-color: red;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .head {
+        background-color: rgb(255, 0, 0);
+        padding: 10px 30px;
+        color: white;
+    }
+    
+    h1 {
+        font-size: 45px;
+        position: relative;
+        top: 2px;
+    }
+    
+    p {
+        padding-left: 12px;
+        font-size: 30px;
+    }
+    
+    .container {
+        display: flex;
+        background-color: white;
+    }
+    
+    .center {
+        width: 80%;
+    }
+    
+    h2 {
+        color: red;
+        padding: 21px;
+        font-weight: bold;
+        font-size: 46px;
+    }
+    
+    .content {
+        color: black;
+        font-size: 20px;
+        padding: 0 17px;
+    }
+    
+    a {
+        font-size: 20px;
+        color: black;
+        padding: 17px;
+    }
+    
+    .contenta:hover {
+        text-decoration: none;
+    }
+    
+    h3 {
+        color: red;
+        font-size: 35px;
+        padding: 21px;
+    }
+    
+    .left {
+        text-align: center;
+        margin: 5px;
+        width: 20%;
+    }
+    
+    .item {
+        background-color: #ff0000;
+        border: 1px solid #fff;
+        list-style-type: none;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 5px;
+        margin-bottom: 5px;
+    }
+    
+    .item a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        font-size: 24px;
+        letter-spacing: 2px;
+    }
+    
+    .item:nth-child(2) {
+        border: 2px solid red;
+        background-color: white;
+        color: #d14836;
+        font-weight: bold;
+    }
+    
+    .item:hover {
+        border: 2px solid red;
+        border-radius: 5px;
+        background-color: rgb(255, 255, 255);
+        color: rgb(255, 0, 0);
+    }
+    
+    .item a:hover {
+        color: rgb(255, 0, 0);
+        font-weight: bold;
+    }
+    
+    .right {
+        background-color: rgb(181, 0, 218);
+        color: white;
+        width: 100%;
+    }
+    
+    .righthead {
+        font-size: 40px;
+        padding: 12px;
+    }
+    
+    .rightcontent {
+        padding: 5px;
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    footer {
+        height: 100px;
+        background-color: rgb(255, 0, 0);
+        color: white;
+        font-size: 16px;
+        padding: 10px;
+    }
+</style>
+
+<body>
+    <div class="head">
+        <h1>Welcome to my home</h1>
+        <p>Use Menu To see different Css Layout</p>
+    </div>
+    <div class="container">
+        <div class="center">
+            <h2>Same page Different StyleSheets</h2>
+            <p class="content">
+                "This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:"
+                <br>
+                <br>
+                <a class="contenta" href="index.html">Style Sheet 1</a>,
+                <a class="contenta" href="index2.html">Style Sheet 2</a>,
+                <a class="contenta" href="index3.html">Style Sheet 3</a>,
+                <a class="contenta" href="index4.html">Style Sheet 4</a>
+            </p>
+            <h3>No Style</h3>
+            <p class="content">
+                "This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:"
+                <br>
+                <br>
+                <a class="contenta" href="noindex.html">No Style Sheet</a>
+                <br><br>
+            </p>
+        </div>
+        <ul class="left">
+            <li class="item">
+                <a href="index.html">Style Sheet 1</a> </li>
+            <li class="item">
+                <a style="color: red;" href="index.html">Style Sheet 2</a> </li>
+            <li class="item">
+                <a href="index3.html">Style Sheet 3</a> </li>
+            <li class="item">
+                <a href="index4.html">Style Sheet 4</a> </li>
+            <li class="item">
+                <a href="noindex.html">No Style Sheet </a> </li>
+        </ul>
+    </div>
+    <div class="right">
+        <div class="righthead">
+            Side-Bar
+        </div>
+        <div class="rightcontent">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente facilis sed, provident exercitationem voluptatibus quidem inventore. Provident corrupti debitis doloribus.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente facilis sed,
+            provident exercitationem voluptatibus quidem inventore. Provident corrupti debitis doloribus.
+        </div>
+    </div>
+    <footer>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus sit optio esse repellendus corporis perspiciatis, officiis ipsum, architecto provident eum nobis quas iure id, nisi ex tempora sed aperiam illum? Incidunt ducimus libero impedit a esse maxime
+        facilis possimus, similique voluptate minus mollitia ea inventore, quia dignissimos? Doloribus ipsa ad aut deleniti in adipisci, consequatur cupiditate doloremque. Amet, rerum. Amet delectus ex officiis voluptas quasi illo. Quaerat, atque autem
+        error placeat dolorem ipsa ea nobis fugit optio alias facilis porro ad molestiae cupiditate? Possimus harum, repudiandae, veniam iusto ipsa ratione incidunt et quibusdam, consequatur illo odit porro facilis amet dolore!
+    </footer>
+</body>
+
+</html>
